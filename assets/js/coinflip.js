@@ -41,6 +41,7 @@ function flipThatCoin(result) {
       else {
           losses++;
           $("#win-lose").html("<h2>Lost!</h2>");
+          $("#loses").html("<h3>"+ loses +"</h3>");
 
       }
 }
@@ -57,4 +58,11 @@ $("#tails").on("click", function() {
       //  Find the span with an id of tails-chosen. Replace the html inside of the span with the tailsCount.
       //  Find the div with an id of guess. Update it with the word "Tails" bolded.
       //  Call the flipThatCoin function and pass value 1 into it.
+    $("#tails").on("click",function(){
+        tailsCount++;
+        $("#tails-chosen").html(tailsCount);
+        $("#guess").html("<b>Tails</b>");
+        flipThatCoin(1);
+    });
+     
 });
