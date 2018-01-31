@@ -41,7 +41,7 @@ function flipThatCoin(result) {
     else {
         losses++;
         $("#win-lose").html("<h2>Lost!</h2>");
-        $("#loses").html("<h3>" + loses + "</h3>");
+        $("#losses").html("<h3>" + losses + "</h3>");
 
     }
 }
